@@ -1,3 +1,4 @@
+No url found
 [
   {
     "firmware": {
@@ -332,10 +333,10 @@
       "force": false,
       "md5": "8443d984969cd03d1ce3a480e3441d42",
       "rec": false,
-      "safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/8443d984969cd03d1ce3a480e3441d42_upd_ninebot.scooter.v17.bin?GalaxyAccessKeyId=5721718224520&Expires=1748415777564&Signature=KH2I+0cCd/s3u1n8d/1ibXTK6n0=",
+      "safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/8443d984969cd03d1ce3a480e3441d42_upd_ninebot.scooter.v17.bin?GalaxyAccessKeyId=5721718224520&Expires=1763913602674&Signature=7NFzHkaAEswRUhx7/S4UtP7wWCA=",
       "time_out": 30,
       "upload_time": 1732863777,
-      "url": "https://fk-res-abroad-cdn.home.mi.com/default/8443d984969cd03d1ce3a480e3441d42_upd_ninebot.scooter.v17.bin?GalaxyAccessKeyId=5721718224520&Expires=1748415777564&Signature=KH2I+0cCd/s3u1n8d/1ibXTK6n0=",
+      "url": "https://fk-res-abroad-cdn.home.mi.com/default/8443d984969cd03d1ce3a480e3441d42_upd_ninebot.scooter.v17.bin?GalaxyAccessKeyId=5721718224520&Expires=1763913602674&Signature=7NFzHkaAEswRUhx7/S4UtP7wWCA=",
       "version": "038.023.127_0005"
     },
     "model": "ninebot.scooter.v17",
@@ -516,16 +517,16 @@
       "diff_safe_url": "",
       "diff_url": "",
       "force": false,
-      "mcu_md5": "01582633af2638ed576c0946339098e3",
-      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/signed_01582633af2638ed576c0946339098e3_mcu_xiaomi.scooter.elite.bin?GalaxyAccessKeyId=5721718224520&Expires=9223372036854775807&Signature=BKynjmnkQdhb0ojTzxk5PeTTatE=",
-      "mcu_version": "0134",
-      "md5": "bbc376a453bbd51da10b7a44aae12bf0",
+      "mcu_md5": "d23740b5a67dbdffe165700eb47d7e46",
+      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/signed_d23740b5a67dbdffe165700eb47d7e46_mcu_xiaomi.scooter.elite.bin?GalaxyAccessKeyId=5721718224520&Expires=9223372036854775807&Signature=+hFf8QyPrvVhfHO/zODIVHanSDQ=",
+      "mcu_version": "0135",
+      "md5": "844824457968a40be0226550d6182c39",
       "rec": false,
-      "safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/bbc376a453bbd51da10b7a44aae12bf0_upd_xiaomi.scooter.elite.bin?GalaxyAccessKeyId=5721718224520&Expires=1754992689437&Signature=XQhnPvx81oRFYcwCV2CGgClSqIc=",
+      "safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/844824457968a40be0226550d6182c39_upd_xiaomi.scooter.elite.bin?GalaxyAccessKeyId=5721718224520&Expires=1762338362419&Signature=ZY/8Hc4pL5QBJSBfbnLx3YfgWFs=",
       "time_out": 180,
-      "upload_time": 1739440689,
-      "url": "https://fk-res-abroad-cdn.home.mi.com/default/bbc376a453bbd51da10b7a44aae12bf0_upd_xiaomi.scooter.elite.bin?GalaxyAccessKeyId=5721718224520&Expires=1754992689437&Signature=XQhnPvx81oRFYcwCV2CGgClSqIc=",
-      "version": "2.6.0_0037"
+      "upload_time": 1746786362,
+      "url": "https://fk-res-abroad-cdn.home.mi.com/default/844824457968a40be0226550d6182c39_upd_xiaomi.scooter.elite.bin?GalaxyAccessKeyId=5721718224520&Expires=1762338362419&Signature=ZY/8Hc4pL5QBJSBfbnLx3YfgWFs=",
+      "version": "2.6.0_0041"
     },
     "model": "xiaomi.scooter.elite",
     "name": "Xiaomi Electric Scooter Elite"
@@ -559,7 +560,7 @@
       "diff_url": "",
       "force": false,
       "mcu_md5": "370dbaba96a88d7f4dd7bc8d7aafd78b",
-      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/370dbaba96a88d7f4dd7bc8d7aafd78b_mcu_xiaomi.scooter.5max.bin?GalaxyAccessKeyId=5721718224520&Expires=1748241108990&Signature=YEBBAYDmslMr+5yWaoTG34UQRqw=",
+      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/370dbaba96a88d7f4dd7bc8d7aafd78b_mcu_xiaomi.scooter.5max.bin?GalaxyAccessKeyId=5721718224520&Expires=1763740803005&Signature=XA8zGCUD72yu0cLMPIDfcNhaXWM=",
       "mcu_version": "0016",
       "md5": "f7e136e672837fcb05764f89ba808a35",
       "rec": false,
@@ -580,7 +581,7 @@
       "diff_url": "",
       "force": false,
       "mcu_md5": "10755810f046ae62e16baca2ef0eb1a5",
-      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/10755810f046ae62e16baca2ef0eb1a5_mcu_xiaomi.scooter.0005.bin?GalaxyAccessKeyId=5721718224520&Expires=1748240835026&Signature=w64OcPWgugwwY4KCjPwObKQWxnQ=",
+      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/10755810f046ae62e16baca2ef0eb1a5_mcu_xiaomi.scooter.0005.bin?GalaxyAccessKeyId=5721718224520&Expires=1763740802986&Signature=bzvq9tgUFdp5BCigTV0yQyU+CI4=",
       "mcu_version": "0015",
       "md5": "c3899d85efe817f251a6844bcf01c997",
       "rec": false,
