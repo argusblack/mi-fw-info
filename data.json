@@ -592,26 +592,5 @@
     },
     "model": "xiaomi.scooter.0005",
     "name": "Xiaomi Electric Scooter 5"
-  },
-  {
-    "firmware": {
-      "changeLog": "1. Fixed some known issues.\n2. Optimized user experience.",
-      "diff_md5": "",
-      "diff_safe_url": "",
-      "diff_url": "",
-      "force": false,
-      "mcu_md5": "b8597265396ec1a8d51fa7003f020c93",
-      "mcu_safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/signed_b8597265396ec1a8d51fa7003f020c93_mcu_xiaomi.scooter.5plus.bin?GalaxyAccessKeyId=5721718224520&Expires=9223372036854775807&Signature=BqyMe5r3NJp43arjtKTG9lQ/UGs=",
-      "mcu_version": "0034",
-      "md5": "6f2429c0eedd09cb5db768c8ae0faeba",
-      "rec": false,
-      "safe_url": "https://fk-res-abroad-cdn.home.mi.com/default/6f2429c0eedd09cb5db768c8ae0faeba_upd_xiaomi.scooter.5plus.bin?GalaxyAccessKeyId=5721718224520&Expires=1761528153730&Signature=lCGnN8yvEyUL7rh2ANU3LP+tYK4=",
-      "time_out": 30,
-      "upload_time": 1745976153,
-      "url": "https://fk-res-abroad-cdn.home.mi.com/default/6f2429c0eedd09cb5db768c8ae0faeba_upd_xiaomi.scooter.5plus.bin?GalaxyAccessKeyId=5721718224520&Expires=1761528153730&Signature=lCGnN8yvEyUL7rh2ANU3LP+tYK4=",
-      "version": "2.7.0_0037"
-    },
-    "model": "xiaomi.scooter.5plus",
-    "name": "Xiaomi Electric Scooter 5 Plus"
   }
 ]
