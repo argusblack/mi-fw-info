@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi|Navee Firmware info</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Press+Start+2P&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link id="themeSheet" rel="stylesheet" href="./static/themes/modern.css" />
+  <script src="./lib/theme_consts.js"></script>
+  <script>
+    (() => {
+      const { IDS, DEFAULT, STORAGE_KEY } = window.THEMES;
+      let theme = DEFAULT;
+      try {
+        const param = new URLSearchParams(window.location.search).get("theme");
+        if (param && IDS.includes(param)) {
+          theme = param;
+        } else {
+          const saved = localStorage.getItem(STORAGE_KEY);
+          if (saved && IDS.includes(saved)) theme = saved;
+        }
+      } catch (_) {
+        /* ignore */
+      }
+      document.documentElement.dataset.theme = theme;
+      const sheet = document.getElementById("themeSheet");
+      if (sheet) sheet.href = `./static/themes/${theme}.css`;
+      window.__FW_BOOT_THEME__ = theme;
+    })();
+  </script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="bg-world" aria-hidden="true">
+    <div class="road road-a"></div>
+    <div class="road road-b"></div>
+    <span class="scooter s1">🛴</span>
+    <span class="scooter s2">🛴</span>
+    <span class="scooter s3">🛴</span>
+    <span class="scooter s4">🛴</span>
+    <span class="star st1">★</span>
+    <span class="star st2">★</span>
+    <span class="star st3">★</span>
+  </div>
+
+  <marquee class="top-marquee" behavior="scroll" scrollamount="6">
+    *** UNOFFICIAL FIRMWARE DUMPSTER *** best viewed in Netscape 4.0 *** not affiliated with any manufacturer *** FLASH AT YOUR OWN RISK ***
+  </marquee>
+
+  <div class="theme-bar">
+    <span class="theme-bar-label" id="themeBarLabel">Select theme:</span>
+    <nav class="theme-switch" id="themeSwitch" aria-labelledby="themeBarLabel"></nav>
+  </div>
+
+  <div class="page-wrap">
+    <header class="hero">
+      <p class="hero-brand">Mi|Navee</p>
+      <h1 class="hero-title">Firmware info</h1>
+      <p class="hero-unofficial">~~~ UNOFFICIAL ~~~</p>
+      <p class="hero-sub">Research catalog of manufacturer CDN firmware links for Xiaomi Home scooters and Navee vehicles. This site does not host firmware files.</p>
+      <p class="hero-meta" id="snapshotMeta"></p>
+      <p class="under-construction classic-only">[ under construction since forever ]</p>
+    </header>
+
+    <main class="shell">
+      <nav class="tabs" role="tablist" aria-label="Catalog">
+        <button type="button" class="tab is-active" data-catalog="mi" role="tab" aria-selected="true">Mi Cloud</button>
+        <button type="button" class="tab" data-catalog="navee" role="tab" aria-selected="false">Navee API</button>
+      </nav>
+
+      <label class="picker">
+        <span class="picker-label">Select model</span>
+        <select id="modelSelect"></select>
+      </label>
+      <p class="caution">Match the <strong>Model ID</strong> on your device (e.g. with nRF Connect) before flashing.</p>
+
+      <section class="detail" id="detail" hidden>
+        <div class="detail-visual">
+          <img id="productImage" alt="" />
+          <p class="img-src" id="imageSource"></p>
+        </div>
+        <div class="detail-copy">
+          <h2 id="productName"></h2>
+          <dl class="meta-list">
+            <div><dt>Model ID</dt><dd id="modelId"></dd></div>
+            <div id="changeDateRow" hidden><dt>Change date (UTC)</dt><dd id="changeDate"></dd></div>
+          </dl>
+          <p class="changelog" id="changeLog" hidden></p>
+          <div id="fwBlocks"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="disclaimer">
+      <h2>Disclaimer</h2>
+      <p>
+        Links and images point at manufacturer CDNs. This unofficial page is informational only; we do not host firmware and make no warranty about safety or suitability.
+        <button type="button" class="disclaimer-open" id="openFullDisclaimer">Full disclaimer</button>
+      </p>
+      <p class="hit-counter">you are visitor #00<span id="fakeHits">1337</span></p>
+    </footer>
+  </div>
+
+  <dialog class="disclaimer-modal" id="fullDisclaimer">
+    <form method="dialog" class="disclaimer-modal-inner">
+      <header class="disclaimer-modal-head">
+        <h2>Full disclaimer</h2>
+        <button type="submit" class="disclaimer-close" aria-label="Close">Close</button>
+      </header>
+      <div class="disclaimer-modal-body">
+        <p>All product images links provided on this site are sourced directly from content delivery network of the respective manufacturers. These images and links are intended for informational purposes only and are not hosted or controlled by us. We do not claim ownership of any file nor do we endorse or guarantee their content, functionality, or safety.</p>
+        <ol>
+          <li>
+            <strong>Purpose and Intent:</strong>
+            The links provided on this website lead to firmware downloads for various devices. The purpose of sharing these links is to facilitate access to firmware updates that may be necessary for maintaining or upgrading your devices. These links are intended for informational and educational purposes only.
+          </li>
+          <li>
+            <strong>No Endorsement or Warranty:</strong>
+            We do not endorse or guarantee the accuracy, legality, or safety of the firmware files accessible through these links. The firmware is provided by the original manufacturers and is subject to their terms and conditions. We are not responsible for any issues arising from the use of these firmware files, including but not limited to damage to devices, data loss, or incompatibility issues.
+          </li>
+          <li>
+            <strong>Manufacturer's Terms and Conditions:</strong>
+            Please be aware that the use and distribution of firmware may be governed by the terms and conditions set forth by the respective manufacturers. Users are advised to review and adhere to these terms before downloading or using any firmware.
+          </li>
+          <li>
+            <strong>Intellectual Property Rights:</strong>
+            The product images and firmware files linked from this site are the property of their respective copyright holders. By providing these links, we do not claim any ownership or rights. Any use of the data must comply with the copyright and licensing terms specified by the manufacturers.
+          </li>
+          <li>
+            <strong>No Liability:</strong>
+            We are not liable for any direct or indirect damages or losses resulting from the use of the firmware or the links provided. Users assume full responsibility for their use of the linked firmware and for ensuring compliance with any relevant laws and manufacturer guidelines.
+          </li>
+          <li>
+            <strong>Content Accuracy:</strong>
+            While we strive to ensure that the links are accurate and up-to-date, we make no warranties or representations regarding the correctness of the information provided. Users are encouraged to verify the integrity and authenticity of any firmware before downloading and installing it.
+          </li>
+          <li>
+            <strong>Legal Compliance:</strong>
+            The publication of these links is intended to comply with applicable laws and regulations. If you have any legal concerns or believe that any of the content on this site infringes on your rights, please contact us immediately so that we can address the issue.
+          </li>
+        </ol>
+        <p>By accessing and using the links provided on this website, you acknowledge that you have read, understood, and agree to this disclaimer.</p>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="./static/app.js"></script>
+</body>
+</html>

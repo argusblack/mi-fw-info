@@ -1,104 +1,162 @@
-import streamlit as st
+#!/usr/bin/env python3
+"""Streamlit host for the static Mi|Navee firmware UI."""
+
+from __future__ import annotations
+
 import json
-import os
-from datetime import datetime
+from pathlib import Path
 
-file_path = "data.json"
-modification_date = os.path.getmtime(file_path)
+import streamlit as st
+import streamlit.components.v1 as components
 
-data = None
-with open(file_path) as f:
-    data = json.load(f)
-
-
-# Function to convert upload_time to UTC datetime
-def convert_to_utc(timestamp):
-    utc_time = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
-    return utc_time
-
-st.title("Mi|Navee Firmware Info")
-st.write(f"Snapshot: {convert_to_utc(modification_date)}")
-
-# Extract models for the dropdown menu
-names = {item['name']: item['model'] for item in data}
-
-# Create a dropdown menu for selecting the model
-name_selected = st.selectbox("**Select Model**", sorted(names.keys()))
-
-st.write("**Caution:** Make sure to select the correct model by comparing the **Model ID**! Use tool like *nRF Connect* to find out the correct **Model ID** of your device.")
-
-# Display the corresponding data based on the selected model
-if name_selected:
-    model_selected = names[name_selected]
-    selected_data = next(item for item in data if item['model'] == model_selected)
-
-    st.markdown(f"<h1 style='text-align: center;'>{name_selected}</h1>", unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
-    with col1:
-        if 'extra' in selected_data:
-            img = selected_data['extra']['imageMin']
-            st.image(img, width=200)
-            st.write(f"Image source: {img.split('?')[0]}")
-
-    with col2:
-        st.write(f"**Model ID**: {model_selected}")
-        date = selected_data['firmware'].get('upload_time', 0)
-        if date != 0:
-            st.write(f"**Change Date (UTC)**: {convert_to_utc(date)}")
-        if selected_data['firmware']['changeLog']:
-            st.write(f"**Change Log**: {selected_data['firmware']['changeLog']}")
-
-        if 'version' in selected_data['firmware']:
-            md5 = selected_data['firmware'].get('md5')
-
-            st.subheader('BLE Firmware Details')
-            st.write(f"**Version**: {selected_data['firmware']['version']}")
-            if md5:
-                st.write(f"**MD5**: {md5}")
-            st.write(f"**Update URL**: [Download Firmware]({selected_data['firmware']['safe_url']})")
-
-        if 'mcu_version' in selected_data['firmware']:
-            md5 = selected_data['firmware'].get('mcu_md5')
-
-            st.subheader('MCU Firmware Details')
-            st.write(f"**Version**: {selected_data['firmware']['mcu_version']}")
-            if md5:
-                st.write(f"**MD5**: {md5}")
-            st.write(f"**Update URL**: [Download MCU Firmware]({selected_data['firmware']['mcu_safe_url']})")
-
-        if 'bms_version' in selected_data['firmware']:
-            md5 = selected_data['firmware'].get('bms_md5')
-
-            st.subheader('BMS Firmware Details')
-            st.write(f"**Version**: {selected_data['firmware']['bms_version']}")
-            if md5:
-                st.write(f"**MD5**: {md5}")
-            st.write(f"**Update URL**: [Download bms Firmware]({selected_data['firmware']['bms_safe_url']})")
+ROOT = Path(__file__).resolve().parent
+MI_JSON = ROOT / "mi.json"
+NAVEE_JSON = ROOT / "navee.json"
+INDEX_HTML = ROOT / "index.html"
+STYLES_DIR = ROOT / "static" / "themes"
+APP_JS = ROOT / "static" / "app.js"
+THEME_CONSTS = ROOT / "lib" / "theme_consts.js"
+THEME_IDS = ("modern", "classic", "fashion")
 
 
-st.header("Disclaimer")
-st.write("""All product images links provided on this site are sourced directly from content delivery network of the respective manufacturers. These images and links are intended for informational purposes only and are not hosted or controlled by us. We do not claim ownership of any file nor do we endorse or guarantee their content, functionality, or safety.
+def load_catalog(path: Path) -> list:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as fh:
+        data = json.load(fh)
+    return data if isinstance(data, list) else []
 
- 1. Purpose and Intent:
-The links provided on this website lead to firmware downloads for various devices. The purpose of sharing these links is to facilitate access to firmware updates that may be necessary for maintaining or upgrading your devices. These links are intended for informational and educational purposes only.
 
- 2. No Endorsement or Warranty:
-We do not endorse or guarantee the accuracy, legality, or safety of the firmware files accessible through these links. The firmware is provided by the original manufacturers and is subject to their terms and conditions. We are not responsible for any issues arising from the use of these firmware files, including but not limited to damage to devices, data loss, or incompatibility issues.
+def _payload(mi: list, navee: list) -> str:
+    payload = {
+        "mi": mi,
+        "navee": navee,
+        "snapshots": {
+            "mi": int(MI_JSON.stat().st_mtime * 1000) if MI_JSON.exists() else None,
+            "navee": int(NAVEE_JSON.stat().st_mtime * 1000) if NAVEE_JSON.exists() else None,
+        },
+    }
+    return json.dumps(payload, ensure_ascii=False)
 
- 3. Manufacturer's Terms and Conditions:
-Please be aware that the use and distribution of firmware may be governed by the terms and conditions set forth by the respective manufacturers. Users are advised to review and adhere to these terms before downloading or using any firmware.
 
- 4. Intellectual Property Rights:
-The product images and firmware files linked from this site are the property of their respective copyright holders. By providing these links, we do not claim any ownership or rights. Any use of the data must comply with the copyright and licensing terms specified by the manufacturers.
+def build_document(mi: list, navee: list, theme: str | None = None) -> str:
+    explicit_theme = theme if theme in THEME_IDS else None
+    active = explicit_theme or "modern"
 
- 5. No Liability:
-We are not liable for any direct or indirect damages or losses resulting from the use of the firmware or the links provided. Users assume full responsibility for their use of the linked firmware and for ensuring compliance with any relevant laws and manufacturer guidelines.
+    html = INDEX_HTML.read_text(encoding="utf-8")
+    consts = THEME_CONSTS.read_text(encoding="utf-8")
+    js = APP_JS.read_text(encoding="utf-8")
+    data_json = _payload(mi, navee)
 
- 6. Content Accuracy:
-While we strive to ensure that the links are accurate and up-to-date, we make no warranties or representations regarding the correctness of the information provided. Users are encouraged to verify the integrity and authenticity of any firmware before downloading and installing it.
+    style_tags = []
+    for tid in THEME_IDS:
+        css = (STYLES_DIR / f"{tid}.css").read_text(encoding="utf-8")
+        # All themes available; JS picks via localStorage / query. Default media until boot.
+        media = "all" if tid == active else "not all"
+        style_tags.append(
+            f'<style data-theme-css="{tid}" media="{media}">\n{css}\n</style>'
+        )
 
- 7. Legal Compliance:
-The publication of these links is intended to comply with applicable laws and regulations. If you have any legal concerns or believe that any of the content on this site infringes on your rights, please contact us immediately so that we can address the issue.
+    # Drop external sheet + early boot (Streamlit cannot fetch theme files); keep consts+app.
+    html = html.replace(
+        '<link id="themeSheet" rel="stylesheet" href="./static/themes/modern.css" />\n'
+        '  <script src="./lib/theme_consts.js"></script>\n'
+        '  <script>\n'
+        '    (() => {\n'
+        '      const { IDS, DEFAULT, STORAGE_KEY } = window.THEMES;\n'
+        '      let theme = DEFAULT;\n'
+        '      try {\n'
+        '        const param = new URLSearchParams(window.location.search).get("theme");\n'
+        '        if (param && IDS.includes(param)) {\n'
+        '          theme = param;\n'
+        '        } else {\n'
+        '          const saved = localStorage.getItem(STORAGE_KEY);\n'
+        '          if (saved && IDS.includes(saved)) theme = saved;\n'
+        '        }\n'
+        '      } catch (_) {\n'
+        '        /* ignore */\n'
+        '      }\n'
+        '      document.documentElement.dataset.theme = theme;\n'
+        '      const sheet = document.getElementById("themeSheet");\n'
+        '      if (sheet) sheet.href = `./static/themes/${theme}.css`;\n'
+        '      window.__FW_BOOT_THEME__ = theme;\n'
+        '    })();\n'
+        '  </script>',
+        '<link id="themeSheet" rel="stylesheet" href="about:blank" />\n'
+        + "\n".join(style_tags),
+    )
 
-By accessing and using the links provided on this website, you acknowledge that you have read, understood, and agree to this disclaimer.""")
+    theme_boot = ""
+    if explicit_theme:
+        theme_boot = f"window.__FW_THEME__ = {json.dumps(explicit_theme)};"
+
+    # Prefer localStorage inside the iframe after load.
+    streamlit_boot = """
+(() => {
+  const { IDS, DEFAULT, STORAGE_KEY } = window.THEMES;
+  let theme = DEFAULT;
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved && IDS.includes(saved)) theme = saved;
+  } catch (_) {}
+  if (window.__FW_THEME__ && IDS.includes(window.__FW_THEME__)) {
+    theme = window.__FW_THEME__;
+  }
+  document.querySelectorAll("style[data-theme-css]").forEach((el) => {
+    el.media = el.getAttribute("data-theme-css") === theme ? "all" : "not all";
+  });
+  window.__FW_BOOT_THEME__ = theme;
+})();
+"""
+
+    html = html.replace(
+        '<script src="./static/app.js"></script>',
+        f"<script>window.__FW_DATA__ = {data_json};{theme_boot}</script>\n"
+        f"<script>\n{consts}\n</script>\n"
+        f"<script>\n{streamlit_boot}\n</script>\n"
+        f"<script>\n{js}\n</script>",
+    )
+    return html
+
+
+def main() -> None:
+    st.set_page_config(
+        page_title="Mi|Navee Firmware info",
+        page_icon=None,
+        layout="wide",
+        initial_sidebar_state="collapsed",
+    )
+    st.markdown(
+        """
+        <style>
+          header[data-testid="stHeader"],
+          #MainMenu,
+          footer,
+          div[data-testid="stToolbar"],
+          div[data-testid="stDecoration"],
+          section[data-testid="stSidebar"] { display: none !important; }
+          .block-container {
+            padding: 0 !important;
+            max-width: 100% !important;
+          }
+          iframe { border: none !important; }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    theme = "modern"
+    try:
+        theme = st.query_params.get("theme", None)
+    except Exception:
+        vals = st.experimental_get_query_params().get("theme", [])
+        theme = vals[0] if vals else None
+
+    mi = load_catalog(MI_JSON)
+    navee = load_catalog(NAVEE_JSON)
+    doc = build_document(mi, navee, theme=theme)
+    components.html(doc, height=1400, scrolling=True)
+
+
+if __name__ == "__main__":
+    main()
