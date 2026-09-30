@@ -1,5 +1,215 @@
 [
   {
+    "model": 14701,
+    "name": "NAVEE EXO S Pro",
+    "firmware": {
+      "changeLog": "General optimizations and performance improvements. Added support for the NAVEE App on IOS. Requires NAVEE App v2.1.6 or later.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/22/a7168a1ce2ed4e63aa2429cc5468a042.bin",
+      "version": "3.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/06/12/b89e3675fc8048fe94110616d01f5bfa.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/06/12/584d00dd1261466cbca44bd6425fd54d.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/06/25/fa993d6ca13044709c02b809cc858b7d.pdf"
+    }
+  },
+  {
+    "model": 12901,
+    "name": "NAVEE E60 Pro (12901)",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/22/96bab829d69240009050eb804fe0462e.bin",
+      "version": "2.0.2.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/28/7354328c40b04f328b402ba137933315.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/05/11/d52271023e824108ab423a77348a8f9e.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/05/11/dc956dfdd54e444ca1c3c8f2343a559e.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/05/11/6b5ea36cc2994530a09da2e63289d580.pdf"
+    }
+  },
+  {
+    "model": 12801,
+    "name": "NAVEE E45 Pro (12801)",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/05/7f7e7139c25d429d918175dc6c59c436.bin",
+      "version": "2.0.2.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/28/bb708b011918470793716cbaefd0926c.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/05/18/0b3f52b05a364d49995efa4acdec18be.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/05/18/d1d317d1fdac428ea12c9fa80ea5c0a0.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/05/18/8c3bb29073f64e6489f785d084febd67.pdf"
+    }
+  },
+  {
+    "model": 12701,
+    "name": "NAVEE NT3 Max",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/23/b3396b665a874f5ea667add2d72cd7f0.bin",
+      "version": "0.0.0.7",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/06/fbe0951e4130436fa9f46253123ed99c.bin",
+      "mcu_version": "0.0.1.0"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/06/05/168e2d6239964e3f93ee3322bab89cf9.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/06/05/34d992bf982e4016829b331c5bcaef0d.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/06/16/a70c06d7eeb24f17a0330b66c8666597.pdf"
+    }
+  },
+  {
+    "model": 12601,
+    "name": "NAVEE GT3 Pro (12601)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/05/6cb994d50e0d4e44b71cc6be96c0332a.bin",
+      "version": "2.0.4.6",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/30/e341ce70c12e4cc2a30d6f80a0425fdc.bin",
+      "mcu_version": "0.0.1.7",
+      "bms_safe_url": "https://myusnavee.s3.amazonaws.com/2026/03/24/8d2af69517db4ec8b0c40138b0980ee8.bin",
+      "bms_version": "3.3.1.1"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/05/18/0561ef105d324a81afb238e1a2a9c59e.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/05/18/5c1ec81952784f94a98577bda2dd18dd.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/07/07/2fdb1ffbd10d41a995e52ceecaba0f98.pdf"
+    }
+  },
+  {
+    "model": 12501,
+    "name": "NAVEE ST3 Pro (12501)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/05/e0dfc69749b14434ba6767e24ee28fd9.bin",
+      "version": "2.0.4.6",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/23/3d14a05646914dbaa2dcb1ec7d99d5b6.bin",
+      "mcu_version": "0.0.2.0"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/05/18/826de91116ec44a4a5a50d33adb81c6c.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/05/18/d7c71c82bfed42eab02ae3408a3bdf6e.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/07/07/b97e92de470a4632a1ce9a511e7e9ffc.pdf"
+    }
+  },
+  {
+    "model": 12401,
+    "name": "NAVEE NT3 Pro",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/26/4b2270df9b2d456d92ff52abaf3c9fb7.bin",
+      "version": "0.0.0.7",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/26/417600b41e12436d90c1357c8c2bead6.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/06/05/c2265b99e9a24b2c8fa945654abefd5e.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/06/05/90f70ac261044f25a57f4d4f0eb09703.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/06/16/c05fed95d0154bf8b9ef4201e4902f65.pdf"
+    }
+  },
+  {
+    "model": 11101,
+    "name": "NAVEE NT5 Turbo",
+    "firmware": {
+      "changeLog": "Optimised the Energy Recovery, Optimised the Energy Recovery, This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/12/3d181af9e14a4d9bbf92aef1c2fc5ffb.bin",
+      "version": "3.0.2.2",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/25/1a30cc6d449845969e3c5902fceaa39c.bin",
+      "mcu_version": "0.0.0.7",
+      "bms_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/08/e692dabe2d3c47fda9e78459d25309e4.bin",
+      "bms_version": "1.0.0.4"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/04/02/ad45e55e7701429db8fbe985beb9f569.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/04/02/557a61f0a1254f3b83a1912dc3656e98.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/04/15/e3f72b2b20244f5f9d1da16ad1f87707.pdf"
+    }
+  },
+  {
+    "model": 10701,
+    "name": "NAVEE N65i II (10701)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/04/d06fb83d37284045b673ff5369445d7e.bin",
+      "version": "2.0.5.9",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/08/a3d851d1080046b3822739a304b209c8.bin",
+      "mcu_version": "0.0.0.6"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/12/01/80e9278cce6443aea76a54b0889342d2.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/12/01/2593e9bc06ea46878ab122507ef3862b.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/19/1b6c5f0647df4a7898a0a6e94923c447.pdf"
+    }
+  },
+  {
+    "model": 10601,
+    "name": "NAVEE E60 Pro (10601)",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/05/8ab19c1d0552477eb0819c3d1f10ac27.bin",
+      "version": "2.0.2.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/28/a7e4a14657474a348f6793b0f873be2c.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/19/f7ec92b841ce4a748b1d075c2fc0df27.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/19/da1927079f754bae84eafd1c681fe9cc.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/546501bb4f8f49ff9ba9595b0ea315e2.pdf"
+    }
+  },
+  {
+    "model": 10501,
+    "name": "NAVEE UT3 Max",
+    "firmware": {
+      "changeLog": "1. Optimized system performance\n2. Improved system stability, 1. Optimized system performance\n2. Improved system stability",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/01/27/b911abaf99db4132bc4963c0a2fe6119.bin",
+      "version": "0.0.0.4",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/01/07/1ee29a5241ed49739463288107557ade.bin",
+      "mcu_version": "0.0.0.5"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/02/03/97e89630b9da4eb6abf9293bda84867a.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/02/03/334f89a00b10478883dd1812e69b8be5.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/26/9da5e2e8dea947d78c0db338d60c551b.pdf"
+    }
+  },
+  {
+    "model": 10301,
+    "name": "NAVEE E60 Pro",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/05/a698a473147b411f9c5ea49984f30d6c.bin",
+      "version": "2.0.2.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/28/4b504cec76844dc9a862859f25c88328.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/18/eddfc1d846b546c4825205ad9f1cafd0.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/18/1839812effd54f2f901ba63a670c85a3.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/a013905ad1704bd3a7d3cf2cf5c52691.pdf"
+    }
+  },
+  {
+    "model": 10201,
+    "name": "NAVEE V45i",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/23/73dc57343e3a4b24910e887483147923.bin",
+      "version": "0.0.0.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/27/eeab120a89ad4f1996ef720a60a8ef1f.bin",
+      "mcu_version": "0.0.0.5"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/27/efcf399c885f43b3a0661eaa89bdcca2.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/28/5c0ea739db574097b7d9c681877258e0.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/3692e6df30e34040b2a2db7ca50b358a.pdf"
+    }
+  },
+  {
     "model": 10101,
     "name": "NAVEE E20 Lite",
     "firmware": {
@@ -15,6 +225,22 @@
       "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/14/51d5d3061fc0402e97c49eee262c49ad.png",
       "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/14/164c936542544ccba52bb6bc6d81c0a3.png",
       "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/b6e9298d5d0f4808a64b6f7ea3e21d36.pdf"
+    }
+  },
+  {
+    "model": 10001,
+    "name": "NAVEE E45 Pro (10001)",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/22/d55f2f01261a477997f195bee35122d4.bin",
+      "version": "2.0.2.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/28/d938b4e10d534bbaab34ae31d0823627.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/18/08ae0ed8fde74cf7829d52668e0054a7.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/18/70acc2ecff7c4ccfb7b1e18c005d6c68.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/c4498965ba234f1d85ba44a0c6b4f160.pdf"
     }
   },
   {
@@ -36,6 +262,102 @@
     }
   },
   {
+    "model": 9701,
+    "name": "NAVEE NT5 Max (9701)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/08/9c584ee62b50492fbf770a4bee22c7ec.bin",
+      "version": "3.0.2.2",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/19/279d9a8fc76e49f082faecd3dadb7db3.bin",
+      "mcu_version": "0.0.1.0"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/14/3606b61454f14a16a7377d92ab121c7b.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/14/4653f115c9a44750b7a60838208412a6.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/19/614db6aab193408f8c905f4d89ce1a3f.pdf"
+    }
+  },
+  {
+    "model": 9601,
+    "name": "NAVEE UT5 Ultra X",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/23/b5945280aa194abdb3695c539601b36a.bin",
+      "version": "0.0.3.0",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/18/4b163e1a228640b8907d2993c8411849.bin",
+      "mcu_version": "0.0.1.9"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/24/333c9ff3c04046eb982ddad22b877cf7.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/24/94833bb0cca549209df6057e9b835902.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/19/84df76abbfe847c9b5a00db57c8a26ea.pdf"
+    }
+  },
+  {
+    "model": 9501,
+    "name": "NAVEE NT5 Ultra X",
+    "firmware": {
+      "changeLog": "1. Optimized system performance\n2. Improved system stability",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/02/02/fd0f8a9f3d0c4aa69d5213c830922fbe.bin",
+      "version": "3.0.1.6"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/14/a1749fe08e0a4b4faf178dc0b754f1cb.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/14/8fd483c997f14cdbb72a9ea0596ec44d.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/19/7e79c7504e2141bd9296ad73c359f67e.pdf"
+    }
+  },
+  {
+    "model": 9401,
+    "name": "NAVEE NT5 Ultra",
+    "firmware": {
+      "changeLog": "Optimised the Energy Recovery, Optimised the Energy Recovery",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/12/feafefc1cd2f4018bd6bc052afad3050.bin",
+      "version": "3.0.2.2",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/25/7315425de634459eb7c103ac50750034.bin",
+      "mcu_version": "0.0.0.5"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/04/02/fbb3a01f3ca9497595ec0d5eeaba3931.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/04/02/5fb723d9957d4c5b9fc9f060da8ef7e2.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/04/15/56147283d263495282ba2d261f48cf2f.pdf"
+    }
+  },
+  {
+    "model": 9301,
+    "name": "NAVEE NT5 Max (9301)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/08/23142727ed564bfb8dea5ac321c9fb11.bin",
+      "version": "3.0.2.2",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/19/4cc6b951eb134f61b52b39a3e778f304.bin",
+      "mcu_version": "0.0.0.6"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/14/0655eb3c9f8c4c14838d36599e2a7e7f.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/14/8e6fa5931ac74e6f82157a75fb65c0ef.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/19/3b81d35b98214db28043b756516c970e.pdf"
+    }
+  },
+  {
+    "model": 9201,
+    "name": "NAVEE NT5 Max+",
+    "firmware": {
+      "changeLog": "Optimised the Energy Recovery, Optimised the Energy Recovery, This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/28/bac751cb7dde4ecdae379ab5949c260b.bin",
+      "version": "3.0.2.2",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/25/57f4f4d148f44461bb701ce9153c7735.bin",
+      "mcu_version": "0.0.0.7",
+      "bms_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/08/076465af46f34d82a228092aa1ededc0.bin",
+      "bms_version": "1.0.0.4"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2026/04/02/78e7ae8d061940498f45dd667fc16717.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2026/04/02/e357634315b14e7d9355e185735251df.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/04/15/904b5784c9bc437280b43d11cc757182.pdf"
+    }
+  },
+  {
     "model": 9101,
     "name": "NAVEE E25 Go",
     "firmware": {
@@ -54,6 +376,22 @@
     }
   },
   {
+    "model": 8901,
+    "name": "NAVEE UT5 Max",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/26/d2f38a127760472fbaeb03abc6e5f95b.bin",
+      "version": "0.0.3.0",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/31/49798714a1e440f096f4b272aaa661ad.bin",
+      "mcu_version": "0.0.1.3"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/24/4cdcdc09a8354524b6216245b42463ec.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/24/f03a49b91a88435792d2c70a2331887c.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/19/83f209a5b34a449dac57f16df0b86dfa.pdf"
+    }
+  },
+  {
     "model": 8501,
     "name": "NAVEE GT5 Max",
     "firmware": {
@@ -67,6 +405,38 @@
       "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/20/78da1c035e874624ab45b276cdbac7fd.png",
       "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/20/1431516176ba4666834fb3172f063854.png",
       "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/35e6ff4d6a594e0b92d3d2409b37add2.pdf"
+    }
+  },
+  {
+    "model": 8401,
+    "name": "NAVEE GT5 Pro",
+    "firmware": {
+      "changeLog": "1. Optimized system performance\n2. Improved system stability, This update brings refined improvements and enhanced experience. Update to enjoy the vehicle at its best.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/01/30/b2abae129b0846edb4e724da8ca4e85f.bin",
+      "version": "1.0.0.4",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/15/f3ef0cbc67cd489aa5f495b512e7b841.bin",
+      "mcu_version": "0.0.1.3"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/11/20/beaad6b8907c4a7b9d5be95caeca9b71.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/11/20/b65d9490d17b45209066049d325a7013.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2026/01/20/ed3d55e040814b39adcdfced002d4273.pdf"
+    }
+  },
+  {
+    "model": 7801,
+    "name": "NAVEE ST5 Max",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., This update brings refined improvements and enhanced experience. Update to enjoy the vehicle at its best.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/04/d734655381f0418eab87b811136a1345.bin",
+      "version": "0.0.2.4",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/03/30/bac267a099714a45a64ad188332259cc.bin",
+      "mcu_version": "0.0.0.9"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/09b289b924814bddb0959755014ed422.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/08/13/2166d5c928ff414db78f015beff05dba.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/10/20/a5c0528d14e0470ab953ea3863e5a72e.pdf"
     }
   },
   {
@@ -102,6 +472,22 @@
     }
   },
   {
+    "model": 5801,
+    "name": "NAVEE XT5 Ultra",
+    "firmware": {
+      "changeLog": "This update brings refined improvements and enhanced experience. Update to enjoy the vehicle at its best., 1. Optimized system performance\n2. Improved system stability",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/01/7df9ae8000ab40248788b45d8c64ec8f.bin",
+      "version": "3.0.2.0",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/01/06/bbab982cc4b64d1694db1e7737fdc030.bin",
+      "mcu_version": "0.0.2.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/19/97bf4bb76483410b963b4ec80c4e5939.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/08/19/e28a71d8abbb48b69c5493d0d46fdc8b.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/10/20/a7e1b949717f448a8829b7b62479a6ed.pdf"
+    }
+  },
+  {
     "model": 5701,
     "name": "NAVEE G5 Max",
     "firmware": {
@@ -118,10 +504,26 @@
     }
   },
   {
+    "model": 5601,
+    "name": "NAVEE G5 pro",
+    "firmware": {
+      "changeLog": "1. Optimized system performance\n2. Improved system stability, This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/02/06/11842375f15e4184a5ba80915a0fb3e8.bin",
+      "version": "2.0.5.7",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/15/380ff34d5c784dc4bd9a843496e29ba9.bin",
+      "mcu_version": "0.0.0.4"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/07/10/ae02f804dc154ecbb3c24072aedcc7d2.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/07/10/012b0d993940459ba11353b6f0c3ca72.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/09/15/2bc68bad5cd945d8bac2daabe7740d3f.pdf"
+    }
+  },
+  {
     "model": 5501,
     "name": "NAVEE Birdie 3x",
     "firmware": {
-      "changeLog": "change in accordance with the interaction logic, 版本升级, 版本升级",
+      "changeLog": "change in accordance with the interaction logic, \u7248\u672c\u5347\u7ea7, \u7248\u672c\u5347\u7ea7",
       "safe_url": "https://myusnavee.s3.amazonaws.com/2025/12/08/a972d638576448fe918dbc7517c1512c.bin",
       "version": "2.0.1.5",
       "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/31/09f3dc2302e649189e2cf0dafaac62f3.bin",
@@ -170,6 +572,22 @@
     }
   },
   {
+    "model": 5201,
+    "name": "NAVEE K100",
+    "firmware": {
+      "changeLog": "This update brings refined improvements and enhanced experience. Update to enjoy the vehicle at its best., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/21/a00e301453684cec905e1382a702e0e0.bin",
+      "version": "0.0.1.2",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/04/10/abd35a00e0714ab18a2af922471e53c9.bin",
+      "mcu_version": "0.0.3.3"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/07/08/725659fa74b745b0ac04f9151cf891b6.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/07/08/f0f59c5d755b4744b670caba0e3c8df9.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/09/15/b2f6485ce6d2450297928435a9fea207.pdf"
+    }
+  },
+  {
     "model": 5101,
     "name": "NAVEE K100 Pro",
     "firmware": {
@@ -183,6 +601,56 @@
       "imageMin": "https://myusnavee.s3.amazonaws.com/2025/07/08/629445ce8b7446699102a61c762a6592.png",
       "imageMax": "https://myusnavee.s3.amazonaws.com/2025/07/08/91d463ffbac04d3cb7826c94e7cb5bcf.png",
       "manual": "https://myusnavee.s3.amazonaws.com/2025/09/15/b671ae9c888a41c883649901a0e7e135.pdf"
+    }
+  },
+  {
+    "model": 5001,
+    "name": "NAVEE K100 Max",
+    "firmware": {
+      "changeLog": "This update includes general optimizations and experience improvements., This update includes general optimizations and experience improvements.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/01/09a6c871f71d4e2ca5e5f03c1d387ea0.bin",
+      "version": "0.0.1.4",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/01/525529d5835c47da9968251407eea78f.bin",
+      "mcu_version": "0.0.3.4"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/07/08/dfb69958035748e8822919e1137091a5.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/07/08/d6745e0f5d144ff6a017733bb105f805.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/09/15/3ed8fa5f4c39445dab05ae75d88727c1.pdf"
+    }
+  },
+  {
+    "model": 4901,
+    "name": "NAVEE ST5 Pro",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., This update brings refined improvements and enhanced experience. Update to enjoy the vehicle at its best.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/04/dcf142cafb1141709581f43fcb66492b.bin",
+      "version": "0.0.2.4",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/03/30/d28fc7448497443d927e4664e193dec2.bin",
+      "mcu_version": "0.0.0.9"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/aaa972b574594d0ab74b6e7c7d4c0943.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/08/13/15864de4e99145858a44ac22df43813b.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/10/20/559c1a0e1c164ec899e663625aefe9a6.pdf"
+    }
+  },
+  {
+    "model": 4801,
+    "name": "NAVEE Birdie 3",
+    "firmware": {
+      "changeLog": "\u7248\u672c\u5347\u7ea7, \u7248\u672c\u5347\u7ea7, \u7248\u672c\u5347\u7ea7",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/09/8af43be27c3d45bf8b81789eac7e73da.bin",
+      "version": "2.0.1.5",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/31/b50bd664b9d144ce8eb434e29e157ea8.bin",
+      "mcu_version": "0.0.4.3",
+      "bms_safe_url": "https://myusnavee.s3.amazonaws.com/2026/05/09/193de173a46c4087ab171942e0ba2f3f.bin",
+      "bms_version": "1.0.0.0"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/04/27/516e80ef39814f1cb39a07ffb53b4e20.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2025/04/27/425966bd1af6477887ac5859d8e578e0.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/06/13/53212ddbbde4416fa4f1cc8a89e0ada6.pdf"
     }
   },
   {
@@ -246,6 +714,86 @@
     }
   },
   {
+    "model": 4101,
+    "name": "NAVEE E25",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/13/e7299dd53a3047db88823e062ace5789.bin",
+      "version": "2.0.0.7",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/08/126d4290763c4d2ea96e4c5c5bb44151.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2024/12/19/b08fabc8746948de9a16c179f29f01b3.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2024/12/19/647583b58b9b4b79ab0cb56f671b65c1.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/03/03/c964140850614045a78d5b0a0d3e33e1.pdf"
+    }
+  },
+  {
+    "model": 4001,
+    "name": "NAVEE E20",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/13/23486c3688e04d5980d8764528cc8daa.bin",
+      "version": "2.0.0.7",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/08/3c97f947d9d34894906c68953b7a0595.bin",
+      "mcu_version": "0.0.0.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2024/12/19/6ef8999bc85d44298e8bda83fb47e2eb.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2024/12/19/69c35a0641c1490580f69ed7eb161422.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2025/03/03/038a00bd51cf45eaa1fa32f38da94cbe.pdf"
+    }
+  },
+  {
+    "model": 3801,
+    "name": "NAVEE ST3 Pro (3801)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/05/f8228016aacc4864ade8ecaf24874418.bin",
+      "version": "2.0.4.6",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/23/f8b684cb472a4b199e621869a9ee5d5e.bin",
+      "mcu_version": "0.0.2.0"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/4631638d553848f9b5ab78f6e9a617d6.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2024/09/24/4afa27a93aab4ff488cfacc414363660.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2024/12/20/8608571cdcd44497be3637fe7a35bb2f.pdf"
+    }
+  },
+  {
+    "model": 3701,
+    "name": "NAVEE ST3",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/05/93fbfb134c4348d994cf8aee547f8a34.bin",
+      "version": "2.0.4.6",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/07/22/3b40b6ce7653487e93041c3540eceee5.bin",
+      "mcu_version": "0.0.1.2"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/f732ac3892484394b3e807a263ba6e90.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2024/09/24/f860f82cffc84b5b8fcffee3be15a72b.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2024/12/20/f27b7708c5054729b623a65bb9508842.pdf"
+    }
+  },
+  {
+    "model": 3601,
+    "name": "NAVEE GT3 Max",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/05/7480815602d0418ba92a45ee178e52ec.bin",
+      "version": "2.0.4.6",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/30/176da96514444edc88462c60a899f003.bin",
+      "mcu_version": "0.0.1.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/0945a633db6d4588be2e6f7383fc0e03.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2024/09/24/70f63bfdd752489dad29abcb9f820b55.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2024/12/20/992a5a5c31dd4e7b938d58cc6a03e191.pdf"
+    }
+  },
+  {
     "model": 3501,
     "name": "NAVEE GT3",
     "firmware": {
@@ -259,6 +807,22 @@
       "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/4faafbf8d76642dd9f9433d98ae80aba.png",
       "imageMax": "https://myusnavee.s3.amazonaws.com/2024/09/24/f3a8604a8068403b9f33f76af7299f50.png",
       "manual": "https://myusnavee.s3.amazonaws.com/2024/12/20/7959b6332a834095b13fea502099a746.pdf"
+    }
+  },
+  {
+    "model": 3401,
+    "name": "NAVEE GT3 Pro (3401)",
+    "firmware": {
+      "changeLog": "General improvements and optimizations., General improvements and optimizations.",
+      "safe_url": "https://myusnavee.s3.amazonaws.com/2026/08/05/bc8ba8d2ef6e4e368efe6c4c8974d2c4.bin",
+      "version": "2.0.4.6",
+      "mcu_safe_url": "https://myusnavee.s3.amazonaws.com/2026/06/30/7860029c832e4a5484e3833ee9b11aae.bin",
+      "mcu_version": "0.0.1.7"
+    },
+    "extra": {
+      "imageMin": "https://myusnavee.s3.amazonaws.com/2025/08/13/a8edad9dbf9e4e8e97b916adc694cbb7.png",
+      "imageMax": "https://myusnavee.s3.amazonaws.com/2024/09/24/667468ef2fbb466c87b8b7c75c00b752.png",
+      "manual": "https://myusnavee.s3.amazonaws.com/2024/12/20/4b694eb35d7b407aa4dd13ea69c8ada1.pdf"
     }
   },
   {
